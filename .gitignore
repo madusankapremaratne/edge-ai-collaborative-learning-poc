@@ -85,4 +85,33 @@ celerybeat-schedule
 .dmypy.json
 dmypy.json
 
-.DS_Store
+# Application-specific
+logs/
+*.db
+*.sqlite
+*.sqlite3
+edge_ai_learning.db
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Docker volumes
+postgres_data/
+redis_data/
+ollama_data/
+
+# Database migrations
+alembic/versions/*.py
+!alembic/versions/__init__.py
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Backup files
+*.bak
+*.backup
+*~
